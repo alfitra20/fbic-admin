@@ -1,0 +1,2 @@
+class TaskController < API
+end
