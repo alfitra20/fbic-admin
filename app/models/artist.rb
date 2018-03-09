@@ -2,9 +2,7 @@ class Artist < ActiveRecord::Base
 	
 	has_many :album
 	has_many :music, :through => :album
-	def display_name
-		self.artistName
+	def to_s
+		artistName
 	end
-
-
 end
