@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+
+	<% content_for :title, "Heartfeels | Homepage" %>
+<!-- or -->
+	<h1><%= content_for(:title, "Android Music Player with facial expression recognition") %></h1>
+ 	<title>Heartfeels | Homepage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Android Music Player with facial expression recognition">
     <meta name="author" content="Heartfeels">
 	<!--title-->
-    <title>Heartfeels | Homepage</title>
+  
 	
 	<%= stylesheet_link_tag    'home', media: 'all' %>
     <%= javascript_include_tag 'home'  %>
@@ -15,8 +20,8 @@
 		
 	
 	<!--Google Fonts-->
-	 <%= javascript_include_tag 'https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' %>
-	 <%= javascript_include_tag 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' %>
+	 <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' %>
+	 <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' %>
 
 	
     <!--[if lt IE 9]>
@@ -49,16 +54,16 @@
 			<div class="home-content padding">
 				<%= image_tag 'slider-logo.png', :class => "img-responsive" %>
 				<!--<img class="img-responsive" src="assets/images/slider-logo.png" alt="" />	-->			
-				<h2>Explore the world through someone else's eyes.</h2>				
+				<h2>Discover the thrill of music enjoyment through your feelings.</h2>				
 				<div class="button">
-					<a href="#" class="btn btn-primary btn-animated">SignUp Now</a>
+					<a href="#" class="btn btn-primary btn-animated">Get It Now</a>
 					<!--<a href="#" class="btn btn-primary btn-animated">Buy Now</a>-->
 				</div>
 				<div class="app-icons text-center">
 					<ul class="list-inline">
-						<li><a href="#"><i class="fa fa-desktop"></i></a></li>
+						<!--<li><a href="#"><i class="fa fa-desktop"></i></a></li>
 						<li><a href="#"><i class="fa fa-apple"></i></a></li>
-						<li><a href="#"><i class="fa fa-windows"></i></a></li>
+						<li><a href="#"><i class="fa fa-windows"></i></a></li>-->
 						<li><a href="#"><i class="fa fa-android"></i></a></li>
 					</ul>
 				</div>
@@ -90,10 +95,10 @@
                         <li><a href="#whats-special">Special</a></li>
                         <li><a href="#compatibility">App Info</a></li>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#screenshots">SCREENSHOTS</a></li>
-                 <!--   <li><a href="#price">Price & plan</a></li>
+                    <!--    <li><a href="#screenshots">SCREENSHOTS</a></li>
+                    <li><a href="#price">Price & plan</a></li>
                         <li><a href="#team">Who we are</a></li> -->
-                        <li><a class="btn btn-primary" href="#">Download</a></li>
+                        <li><a class="btn btn-primary" href="#">Login</a></li>
                     </ul>         
                 </nav>               
             </div>
@@ -110,9 +115,9 @@
 				</div>
 				<div class="col-sm-6 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.20s">
 					<div class="whatsit">
-						<h1>What is Nap App</h1>
-						<h2>Free calls, text and picture sharing with anyone, anywhere!</h2>						
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum nulla pariatur. </p>
+						<h1>Because music excites your feelings</h1>
+						<h2>Heartfeels play the right song at the right moment!</h2>						
+						<p>Some people tend to use music to enhance their current Feelings or Emotion, Feelings may influence what type of music people enjoy to hearing. Heartfeels instantly detect your emotion through your face and play the suitable music for you.</p>
 					</div>						
 				</div>
 			</div>
@@ -125,18 +130,18 @@
 			<div class="text-center section-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.10s">
 				<%= image_tag 'icons/t1.png', :class => "img-responsive"  %>
 				<!--<img class="img-responsive" src="assets/images/icons/t1.png" alt="" />-->
-				<h1>What’s Special</h1>
+				<h1>All your enjoyment is here</h1>
 			</div>
 			<div class="special-features">
 				<div class="row"> 
 					<div class="col-sm-3">
 						<div class="special-content text-right wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.3s">
-							<h2>For Business</h2>
-							<p>Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<h2>Instant Emotion Recognition</h2>
+							<p>Since Feeling can be expressed through your face, Heartfeels equipped with face expression recognition to detect your current emotion Instantly. </p>
 						</div>
 						<div class="special-content text-right wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-							<h2>Top Technology</h2>
-							<p>Ut enim ad minim veniam, quis nosexercitation ullaboris nisi ut aliquip ex ea commodo.</p>
+							<h2>Love your music preferences</h2>
+							<p>Freedom to edit the playlist because we know that you have your favorite music for certain feelings.</p>
 						</div>
 					</div>
 					<div class="col-sm-6">
@@ -147,12 +152,12 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="special-content text-left wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.3s">
-							<h2>Creative Design</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h2>Discover your feelings History</h2>
+							<p>Define yourself by Complete timeline of your feelings over the past days and music that you love at certain emotion.</p>
 						</div>
 						<div class="special-content text-left wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-							<h2>Advanced Security</h2>
-							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+							<h2>Login, Play and Share with Facebook</h2>
+							<p>Have a facebook account? now you can login with your account and tell the world your feelings right now. </p>
 						</div>
 					</div>
 					
@@ -172,8 +177,8 @@
 				<div class="compatibility">
 					<div class="os text-right wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
 						<h2>Android</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="#">More Detail</a>
+						<p>Heartfeels need android 4.1 or later and equipped with front facing camera.</p>
+						<a href="#">Get It Now</a>
 					</div>
 					<div class="os-image wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
 						<%= image_tag 'mockup/os1.png', :class => "img-responsive"  %>
@@ -189,8 +194,8 @@
 					</div>
 					<div class="os text-left wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
 						<h2>iPhone</h2>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-						<a href="#">More Detail</a>
+						<p>We are working on that!.</p>
+						<a href="#">Be the first to hear about it</a>
 					</div>
 				</div>
 			</div>
@@ -211,58 +216,64 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<div class="feature wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">	
-						<%= image_tag 'icons/f1.png', :class => "img-responsive"  %>						
+						<!--<%= image_tag 'icons/f1.png', :class => "img-responsive"  %>-->
+						<%= image_tag 'icons/f6.png', :class => "img-responsive"  %>						
 							<!--<img class="img-responsive" src="assets/images/icons/f1.png" alt="" />-->
-							<h2>Super Fast</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+							<h2>5 Emotion Recognition</h2>
+							<p>Includes Angry, Fear, Neutral, Sad, Happy</p>
 						</div>
 						<div class="feature wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">	
-						<%= image_tag 'icons/f5.png', :class => "img-responsive"  %>						
+						<!--<%= image_tag 'icons/f5.png', :class => "img-responsive"  %>	-->	
+							<%= image_tag 'icons/f3.png', :class => "img-responsive"  %>				
 							<!--<img class="img-responsive" src="assets/images/icons/f5.png" alt="" />-->
-							<h2>Free Text</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+							<h2>Feelings History</h2>
+							<p>Complete timeline of your feelings and music over the past days</p>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="feature wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.3s">							
 							<!--<img class="img-responsive" src="assets/images/icons/f2.png" alt="" />-->
 							<%= image_tag 'icons/f2.png', :class => "img-responsive"  %>	
-							<h2>East to Use</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+							<h2>Facebook Integrated</h2>
+							<p>Signup to Heartfeels now easier with facebook Integration</p>
 						</div>
 						<div class="feature wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">							
 							<!--<img class="img-responsive" src="assets/images/icons/f6.png" alt="" />-->
-							<%= image_tag 'icons/f6.png', :class => "img-responsive"  %>
-							<h2>Creative UI</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+						<%= image_tag 'icons/f2.png', :class => "img-responsive"  %>	
+							<h2>Music Auto Classification</h2>
+							<p>All your music in your phone classified into each of the feelings playlist automatically</p>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="feature wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.4s">							
 						<!--	<img class="img-responsive" src="assets/images/icons/f3.png" alt="" />-->
-							<%= image_tag 'icons/f3.png', :class => "img-responsive"  %>
-							<h2>Video Calls</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+							<!--<%= image_tag 'icons/f3.png', :class => "img-responsive"  %>-->
+								<%= image_tag 'icons/f7.png', :class => "img-responsive"  %>
+							<h2>Share your feelings</h2>
+							<p>With Facebook Let the world knows, how you feel right now</p>
 						</div>
 						<div class="feature wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">							
 							<!--<img class="img-responsive" src="assets/images/icons/f7.png" alt="" />-->
-							<%= image_tag 'icons/f7.png', :class => "img-responsive"  %>
-							<h2>Instant Messaging</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+						<!--	<%= image_tag 'icons/f7.png', :class => "img-responsive"  %>-->
+							<%= image_tag 'icons/f1.png', :class => "img-responsive"  %>
+							<h2>Interactive UI</h2>
+							<p>Easier to Understand, Simple and Robust UI</p>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="feature wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">							
 							<!--<img class="img-responsive" src="assets/images/icons/f4.png" alt="" />-->
-							<%= image_tag 'icons/f4.png', :class => "img-responsive"  %>
-							<h2>Free Call</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+							<!--<%= image_tag 'icons/f4.png', :class => "img-responsive"  %>-->
+						<!--	<%= image_tag 'icons/f7.png', :class => "img-responsive"  %>-->
+								<%= image_tag 'icons/f8.png', :class => "img-responsive"  %>
+							<h2>Customizable Playlist</h2>
+							<p>You always can choose what music in the Feelings playlist</p>
 						</div>
 						<div class="feature wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">							
 							<!--<img class="img-responsive" src="assets/images/icons/f8.png" alt="" />-->
-							<%= image_tag 'icons/f8.png', :class => "img-responsive"  %>
-							<h2>File Sharing</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+							<%= image_tag 'icons/t2.png', :class => "img-responsive"  %>
+							<br/><h2><br>It's Free</h2>
+							<p> Because we all love free stuffs, right?</p>
 						</div>
 					</div>
 					
@@ -271,13 +282,13 @@
 		</div>
 	</div><!--/#features--> 
 
-	<div id="call-to-action" class="padding image-bg">
+	<!--<div id="call-to-action" class="padding image-bg">
 		<div class="overlay-bg"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0.3s">
 					<!--<img class="img-responsive" src="assets/images/mockup/mockup.png" alt="">-->
-					<%= image_tag 'mockup/mockup.png', :class => "img-responsive"  %>
+					<!--<%= image_tag 'mockup/mockup.png', :class => "img-responsive"  %>
 				</div>
 				<div class="col-sm-6">
 					<div class="action-content wow slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
@@ -290,62 +301,14 @@
 		</div>				
 	</div><!--/call-to-action-->
 	
-	<div id="screenshots" class="padding">
-		<div class="container">
-			<div class="text-center section-title  wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.1s">
-				<%= image_tag 'icons/t5.png', :class => "img-responsive"  %>
-				<!--<img class="img-responsive" src="assets/images/icons/t5.png" alt="" />-->
-				<h1>Screenshot Gallery</h1>
-			</div>
-			<div id="screenshot-slider">
-				<div class="screenshot wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
-					<%= image_tag 'mockup/screen1.jpg', :class => "img-responsive" %>
-					<!--<a class="image-link" href="assets/images/mockup/screen1.jpg"><img class="img-responsive" src="assets/images/mockup/screen1.jpg" alt=""></a> -->
-				</div>
-				<div class="screenshot wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
-					<%= image_tag 'mockup/screen2.jpg', :class => "img-responsive" %>
-				<!--	<a class="image-link" href="assets/images/mockup/screen2.jpg"><img class="img-responsive" src="assets/images/mockup/screen2.jpg" alt=""></a>-->
-				</div>
-				<div class="screenshot wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
-					<%= image_tag 'mockup/screen3.jpg', :class => "img-responsive" %>
-					<!--<a class="image-link" href="assets/images/mockup/screen3.jpg"><img class="img-responsive" src="assets/images/mockup/screen3.jpg" alt=""></a> -->
-				</div>
-				<div class="screenshot wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-					<%= image_tag 'mockup/screen4.jpg', :class => "img-responsive" %>
-					<!--<a class="image-link" href="assets/images/mockup/screen4.jpg"><img class="img-responsive" src="assets/images/mockup/screen4.jpg" alt=""></a> -->
-				</div>
-				<div class="screenshot wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-					<%= image_tag 'mockup/screen2.jpg', :class => "img-responsive" %>
-					<!--<a class="image-link" href="assets/images/mockup/screen2.jpg"><img class="img-responsive" src="assets/images/mockup/screen2.jpg" alt=""></a>-->
-				</div>
-				<div class="screenshot wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
-					<%= image_tag 'mockup/screen1.jpg', :class => "img-responsive" %>
-				<!--	<a class="image-link" href="assets/images/mockup/screen1.jpg"><img class="img-responsive" src="assets/images/mockup/screen1.jpg" alt=""></a>-->
-				</div>
-				<div class="screenshot wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
-					<%= image_tag 'mockup/screen4.jpg', :class => "img-responsive" %>
-					<!--<a class="image-link" href="assets/images/mockup/screen4.jpg"><img class="img-responsive" src="assets/images/mockup/screen4.jpg" alt=""></a>-->
-				</div>
-				<div class="screenshot wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
-					<%= image_tag 'mockup/screen3.jpg', :class => "img-responsive" %>
-				<!--	<a class="image-link" href="assets/images/mockup/screen3.jpg"><img class="img-responsive" src="assets/images/mockup/screen3.jpg" alt=""></a>-->
-				</div>
-				<div class="screenshot wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
-					<%= image_tag 'mockup/screen1.jpg', :class => "img-responsive" %>
-				<!--	<a class="image-link" href="assets/images/mockup/screen1.jpg"><img class="img-responsive" src="assets/images/mockup/screen1.jpg" alt=""></a>-->
-				</div>
-				
-			</div>
-		</div>
-	</div><!--/screenshots-->
 	
 	
-	<div id="testimonial" class="padding">
+	<!--<div id="testimonial" class="padding">
 		<div class="container">
 			<div class="text-center section-title wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.1s">
 				<%= image_tag 'icons/t7.png', :class => "img-responsive"  %>
 			<!--	<img class="img-responsive" src="assets/images/icons/t7.png" alt="" />-->
-				<h1>Testimonials</h1>
+			<!--	<h1>Testimonials</h1>
 			</div>
 			
 			<div id="testimonial-slider" class="carousel carousel-fade slide" data-ride="carousel">
@@ -353,7 +316,7 @@
 					<div class="item active">
 						<%= image_tag 'bg/testimonial1.jpg', :class => "img-responsive"  %>
 						<!--<img class="img-responsive" src="assets/images/bg/testimonial1.jpg" alt="" />-->
-						<h2>Cate Scanlon</h2>
+					<!--	<h2>Cate Scanlon</h2>
 						<ul class="list-inline">
 							<li><i class="fa fa-star"></i></li>
 							<li><i class="fa fa-star"></i></li>
@@ -366,7 +329,7 @@
 					<div class="item">
 						 <%= image_tag 'bg/testimonial2.jpg', :class => "img-responsive"  %>
 					<!--	<img class="img-responsive" src="assets/images/bg/testimonial2.jpg" alt="" />-->
-						<h2>Stephen Marshal</h2>
+					<!--	<h2>Stephen Marshal</h2>
 						<ul class="list-inline">
 							<li><i class="fa fa-star"></i></li>
 							<li><i class="fa fa-star"></i></li>
@@ -390,11 +353,11 @@
 				<div class="col-sm-8 col-sm-offset-2">
 					<div class="download-apps wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
 						<h1>Download on App Store</h1>
-						<p> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pelle ntesque nec, egestas non nisi. </p>
+						<p> Begin your enjoyment by downloading heartfeels from the Google Play Store. </p>
 						<div class="apps wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
 							<ul class="list-inline">
-								<li><a href="#"><i class="fa fa-apple"></i></a></li>
-								<li><a href="#"><i class="fa fa-windows"></i></a></li>
+							<!--	<li><a href="#"><i class="fa fa-apple"></i></a></li>
+								<li><a href="#"><i class="fa fa-windows"></i></a></li>-->
 								<li><a href="#"><i class="fa fa-android"></i></a></li>
 							</ul>
 						</div>
@@ -452,7 +415,7 @@
 						<li><a href="#">English(us)</a></li>
 						<li><a href="#">Privacy</a></li>
 						<li><a href="#">Terms</a></li>
-						<li><a href="#">Cookies</a></li>
+						<li><a href="#">info@heartfeels.com</a></li>
 					</ul>
 				</div>	
 			</div>

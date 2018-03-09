@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160306070548) do
+ActiveRecord::Schema.define(version: 20160318174859) do
+
+  create_table "Users", force: :cascade do |t|
+    t.string   "email",      limit: 25,  null: false
+    t.string   "first_name", limit: 25
+    t.string   "last_name",  limit: 25
+    t.string   "gender",     limit: 7
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "password",   limit: 255
+  end
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -103,15 +113,5 @@ ActiveRecord::Schema.define(version: 20160306070548) do
 
   add_index "topplaylists", ["emotion_id"], name: "index_topplaylists_on_emotion_id", using: :btree
   add_index "topplaylists", ["music_id"], name: "index_topplaylists_on_music_id", using: :btree
-
-  create_table "users", force: :cascade do |t|
-    t.string   "email",      limit: 25, null: false
-    t.string   "password",   limit: 15, null: false
-    t.string   "first_name", limit: 25
-    t.string   "last_name",  limit: 25
-    t.string   "gender",     limit: 7
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
-  end
 
 end

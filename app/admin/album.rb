@@ -6,8 +6,8 @@ index do
 column :albumTitle
 column :year
 column "Artist" do |m|
- art = Artist.find(m.artist_id).artistName
-
+ art = Artist.find(m.artist_id)
+link_to art.artistName, admin_artist_path(m.artist_id)
 end
 column "Creation Date", :created_at
 column "Last Update", :updated_at

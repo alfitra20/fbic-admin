@@ -122,6 +122,8 @@ GEM
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    morrisjs-rails (0.5.1)
+      railties (> 3.1, < 5)
     multi_json (1.11.2)
     mysql2 (0.3.20)
     nokogiri (1.6.7.2)
@@ -163,6 +165,7 @@ GEM
       activesupport (>= 3.0)
       i18n
       polyamorous (~> 1.2)
+    raphael-rails (2.1.2)
     rdoc (4.2.2)
       json (~> 1.4)
     ref (2.0.0)
@@ -219,8 +222,10 @@ DEPENDENCIES
   font-awesome-sass
   jbuilder (~> 2.0)
   jquery-rails
+  morrisjs-rails
   mysql2 (~> 0.3.18)
   rails (= 4.2.4)
+  raphael-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

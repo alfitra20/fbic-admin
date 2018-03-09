@@ -33,10 +33,14 @@
 ==========================*/
 
 body{
+	
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: #4f4f4f;
-	background-color: #fff;
+	background-color: white;
+	background-image: url(<%= asset_path 'dreamstime_m.jpg' %>) background-repeat:no-repeat;
+
+
 }
 
 
@@ -267,7 +271,8 @@ textarea.form-control {
 
 #home-section {
 	background-color:#7e90a2;
-	background-image:url(../images/bg/home-bg.jpg);
+	background-image: url(<%= asset_path 'dreamstime_m.jpg' %>);
+	margin-top: 0px;
 	color:#fff;
 	height:700px;
 }
@@ -382,6 +387,7 @@ textarea.form-control {
 #whats-special {
 	position:relative;
 	background-image:url(../images/bg/special-bg.jpg);
+
 	padding-bottom:0;
 	overflow:hidden;
 }

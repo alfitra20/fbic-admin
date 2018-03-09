@@ -2,7 +2,8 @@ class Album < ActiveRecord::Base
 	
 	belongs_to :artist
 	has_many :music
-	def to_s
-		albumTitle
+	def display_name
+		self.albumTitle
+		
 	end
 end

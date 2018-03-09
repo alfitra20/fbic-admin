@@ -5,7 +5,7 @@ class Music < ActiveRecord::Base
 	has_many :history
 	has_many :topplaylists
 
-	def to_s
-		musicTitle
+	def display_name
+		self.musicTitle
 	end
 end

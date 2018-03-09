@@ -4,7 +4,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Fbic Admin"
+  config.site_title = "Heartfeels Administrator"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -164,7 +164,7 @@ ActiveAdmin.setup do |config|
   # Add additional meta tags to the head element of active admin pages.
   #
   # Add tags to all pages logged in users see:
-  #   config.meta_tags = { author: 'My Company' }
+    config.meta_tags = { author: 'Heartfeels' }
 
   # By default, sign up/sign in/recover password pages are excluded
   # from showing up in search engine results by adding a robots meta

@@ -2,10 +2,33 @@ Rails.application.routes.draw do
   
 
 
+  get 'access/login'
+
+  get 'user', :to => "access#index"
+
+  get 'user/index'
+
+  get 'access/attempt_login'
+
+  get 'user/new'
+
+
+
+
+
 root :to => "home#index"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+resources :user
+
+
+
+resources :messages
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

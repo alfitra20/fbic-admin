@@ -14,8 +14,14 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 gem 'activeadmin', github: 'activeadmin'
+	
 
+
+#gem 'letter_opener'
 gem 'active_skin'
+
+gem 'morrisjs-rails'
+gem 'raphael-rails'
 
 gem 'devise'
 # Use jquery as the JavaScript library
